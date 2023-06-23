@@ -8,8 +8,12 @@ html{
 }
 
 body{
-    background-image: linear-gradient(to bottom, #1c1c1c, #171717, #111111, #090909, #000000);
+    background-color: #212121;
     color: white;
+    font-family: "Source Sans Pro", sans-serif;
+}
+span{
+    color:rgb(159, 108, 12);
 }
 
 /* NAV BAR AND HEADER */
@@ -17,12 +21,12 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+    margin-top: 10px;
 }
+
 .titulo{
-
     flex-grow: 1;
-
+    margin-left: 100px;
 }
 
 .lista{
@@ -32,6 +36,11 @@ body{
 }
 .itemlista{
     padding-right: 50px;
+    position: relative;
+  overflow: hidden;
+}
+.itemlista:hover i, .itemlista:hover a{
+    color: rgb(159, 108, 12);
 }
 i{
     padding-right: 5px;
@@ -43,28 +52,52 @@ a:visited {
     text-decoration: none;
     color: white;
 }
+p {
+    color: gray;
+    margin-bottom: 20px;
+}
+.h2, .h3, button{
+    margin-bottom: 10px;
+}
 
+
+  
+  
+div i {
+    font-size: 40px;
+    margin-top: 25px;
+    padding-right: 25px;
+}
 /* HOME SECTION */
 .home{
     display: flex;
 }
 .divimagen{
-    border: 10px solid red;
+   
     width: 50%;
     display: flex;
     justify-content: center;
 }
 .imagendegil{
-    width: 50%;
+    width: 30%
 }
 
 .divtexto{
-    border: 10px solid aqua;
+    
     display: flex;
     flex-direction: column;
     width: 50%;
     justify-content: center;
+    padding-left: 150px;
 }
+
+.h2 {
+    font-size: 30px;
+}
+.name{
+    font-size: 50px;
+}
+
 
 /* ABOUT SECTION */
 
@@ -74,43 +107,53 @@ a:visited {
 
 }
 .divimagen2{
-    border: 10px solid red;
+    
     width: 50%;
     display: flex;
     justify-content: center;
 }
 .divtexto2{
-    border: 10px solid aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   width: 50%;
+    width: 50%;
+    padding-right: 300px;
 
 }
 .imagendegil2{
-    width: 50%;
+    width: 30%;
 }
 
-/* ABOUT SECTION */
+/* My skills SECTION */
 
 .stack{
     display: flex
 
 }
 .divtexto3{
-    border: 10px solid aqua;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-   width: 50%;
-
+    width: 50%;
+    height: 400px;
+    padding-left: 300px;
 }
 
 .divlista{
-    border: 10px solid red;
+    
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.listaskills {
+    list-style-type: none;
+}
+
+.listaskillsitem{
+    padding-top: 10px;
 }
 
 /*STACK SECTION*/
@@ -124,19 +167,24 @@ a:visited {
 
 
 .divarticles{
-    border: 10px solid aqua;
+    
     display: flex;
     height: 400px;
     justify-content: space-around;
 }
 
 .front{
-    border: 10px solid yellow;
-    width: 10%;
+    
+    width: 20%;
+    text-align: center;
 }
 .back{
-    border: 10px solid blueviolet;
-    width: 10%;
+    
+    width: 20%;
+    text-align: center;
+}
+.fb{
+    padding-top: 20px;
 }
 
 /* PROJECTS SECTION*/
@@ -148,32 +196,30 @@ a:visited {
 }
 
 .divtexto4{
-    border: 10px solid red;
+    
     text-align: center;
 }
 
 .divarticles2{
-    border: 10px solid aqua;
     display: flex;
     
 }
 
 .project1{
-    border: 10px solid yellow;
+    
     width: 33%;
     display: flex;
     justify-content: center;
 }
 
 .project2{
-    border: 10px solid green;
+    
     width: 33%;
     display: flex;
     justify-content: center;
 }
 
 .project3{
-    border: 10px solid purple;
     width: 33%;
     display: flex;
     justify-content: center;
@@ -193,7 +239,6 @@ a:visited {
 
 .divtexto5{
     text-align: center;
-    border: 10px solid red;
 }
 .divboton{
     display: flex;
@@ -209,3 +254,112 @@ a:visited {
     display: flex;
     justify-content: center;
 }
+.buttons {
+    background-color: rgb(159, 108, 12);
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.uno{
+    background-color: #353434;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 50px;
+    width:200px ;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: none;
+    margin-top: 20px;
+    color:white;
+    padding-left: 10px;
+}
+.dos{
+    background-color: #353434;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    width: 410px;
+    margin-left: 10px;
+    color:white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.mini {
+    font-size: 20px;
+}
+.h3, h4 {
+    font-size: 30px;
+}
+.form {
+    background-color: #212121;
+    width: 500px;
+    margin: 0 auto;
+    height:330px ;
+    border-radius: 10px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    width: 150px;
+    color: black;
+  }
+  
+  .button::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(to right, #ff9f1c, #e6b566, #ff9f1c);
+    background-size: 400% 100%;
+    animation: borderAnimation 2s linear infinite;
+    border-radius: 10px;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  .iconcontainer{
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+  }
+  
+  .ifooter {
+    font-size: 40px;
+    margin-top: 25px;
+    padding-left: 20px;
+  }
+  .h3footer{
+    margin-bottom: 10px;
+  }  
+
+  .footericons{
+    padding-left: 120px;
+  }
+  
